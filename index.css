@@ -12,10 +12,9 @@ html, body {
 .header {
     min-height: 100vh; 
     width:100% ;
-    background-image: linear-gradient(to right, DodgerBlue	, LightBlue);
+    background-image: linear-gradient(to right, #7D9EFB, #86DAFB);
 }
 
-/*Navbar*/
 nav{
     display: flex;
     padding: 2% 6%;
@@ -39,9 +38,9 @@ nav h3{
 .nav-links ul li a{
 color:#fff; 
 text-decoration: none;
-font-size: 16px;
+font-size: 12px;
 }
-/*Add hover effect*/
+
 .nav-links ul li ::after{
 content: '';
 width:0%; 
@@ -51,6 +50,7 @@ margin: auto;
 background: blueviolet;
 transition: 0.6s;
 }
+
 .nav-links ul li :hover::after
 {
   width: 100%;
@@ -61,48 +61,49 @@ transition: 0.6s;
   
   nav .fa{
       display: none;
-  }
+}
 
-  @media(max-width: 700px)
-  {
-      .about h1{
-          font-size: 15px;
-      }
-      .nav-links ul li{
-          display: block;
-      }
-      .nav-links{
-          position: absolute;
-          background: blue;
-          height: 100vh;
-          width: 200px;
-          top:0; 
-          right:-200px; 
-          text-align: left;
-          z-index:2; 
-          transition: 2s;
+.profile-conatiner
+{
+    display: flex;
+    border: 2px solid white; 
+    border-radius: 8px;
+    justify-content: center; 
+    margin: auto;
+    width:90%; 
+    background-color: white;
+}
+.profile-conatiner h1{
+  font-weight: 600;
+}
+.profileimg-item
+{
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 8px;
+    align-items: center;
+    padding:40px;  
+}
+.profileitem div{
+    margin:30px;
+    padding:2px; 
+}
+.profileitem
+{
+    align-items: center;
+}
 
-      }
-      nav .fa{
-          display: block;
-          color:black;
-          margin:10px; 
-          font-size: 22px;
-          cursor: pointer;
-      }
-      .nav-links ul{
-          padding:30px; 
-      }
- }
-
- /*About me Section*/
- .aboutme{
-    text-align: left; 
-    margin:auto; 
-    padding-top: 100px;
-    width: 100%;
-    background-color:#FAF9F6;
-    
+.aboutme-container{
+    display: flex;
+}
+.aboutme-container div{
+padding:5px;
+}
+.about{
+    flex:1;
+}
+.about-items{
+    flex:1; 
 }
 .aboutme h1{
     font-size: 30px;
@@ -181,35 +182,7 @@ transition: 0.6s;
 
 
 
-.profile
-{
-    width:80%;
-    margin:auto; 
-    padding-top: 30px;
-    background-color: white;
-    border-radius: 10px;
 
-}
-prof-col img{
-    width:60%; 
-    border-radius: 30px;
-    float:left; 
-    padding-bottom: 40px;
-    padding-left:90px;
-    margin-bottom: 20px;
-}
-.pro1-col{
-   
-    margin-left:200px; 
-    align-items: center;
-    text-align: center;
-    list-style: none;
-
-}
-.margin-y{
-margin: 3rem 10px; 
-
-}
 
    /*Client CSS*/
   .clients{
@@ -441,3 +414,35 @@ margin: 3rem 10px;
     color: grey;
     text-align: left;
 }
+
+@media(max-width: 700px)
+  {
+      .about h1{
+          font-size: 15px;
+      }
+      .nav-links ul li{
+          display: block;
+      }
+      .nav-links{
+          position: absolute;
+          background: blue;
+          height: 100vh;
+          width: 200px;
+          top:0; 
+          right:-200px; 
+          text-align: left;
+          z-index:2; 
+          transition: 2s;
+
+      }
+      nav .fa{
+          display: block;
+          color:black;
+          margin:10px; 
+          font-size: 22px;
+          cursor: pointer;
+      }
+      .nav-links ul{
+          padding:30px; 
+      }
+ }
