@@ -169,49 +169,6 @@ transition: 0.6s;
 }
 
 
-/*
-.aboutme-container div{
-padding:5px;
-.about{
-    flex:1;
-}
-.about-items{
-    flex:1; 
-}
-.about h1{
-    font-size: 30px;
-    font-weight: 600;
-    padding-left: 40px;
-    margin-top: 30px;
-}
-.about p{
-    font-size: 14px;
-    font-size: medium;
-    line-height: 22px;
-    padding: 1px;
-    color:gray;
-    text-align: left;
-    Padding-left: 40px;
-    justify-content: center;
-   
-}
-.aboutstats{
-    display: flex;
-    width: 20%;
-    border: 2px solid gray;
-    margin-left:10%;
-    margin-top: 2%;
-    padding: 2%;
-    align-items: center;
-}
-.about-items{
-   margin: 10px;
-   padding: 3px; 
-   justify-content: space-between;
-   gap: 3px;
-}
-
-*/
 
   .clients{
     text-align: center;
@@ -267,8 +224,6 @@ padding:5px;
   }
 }
 
-
-
 .Featured_products
 {
     width:80%;
@@ -311,7 +266,7 @@ padding:5px;
     display: flex;
 }
 
-/*section 2*/
+
 .product2
 {
     width:80%;
@@ -370,7 +325,7 @@ padding:5px;
 .nav-pro{
     display: flex;
 }
-/*testimonials css*/
+
 .testmon{
     width:100%;
     margin: auto;
@@ -441,6 +396,9 @@ padding:5px;
       color:white;
       display: inline;
       justify-content: left;
+      padding-left: 10px;
+      margin-right: 30px;
+      
   }
   .fot-col h4{
       color: white;
@@ -450,6 +408,8 @@ padding:5px;
     color: grey;
     text-align: left;
 }
+
+
 
 @media(max-width: 700px)
   {
@@ -481,4 +441,12 @@ padding:5px;
       .nav-links ul{
           padding:30px; 
       }
+ }
+
+ /*For Mobiles*/
+ @media(max-width: 320px)
+ {
+     .profile-conatiner div img{
+         width:20%; 
+     }
  }
