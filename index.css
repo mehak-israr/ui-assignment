@@ -63,6 +63,7 @@ transition: 0.6s;
       display: none;
 }
 
+
 .profile-conatiner
 {
     display: flex;
@@ -72,6 +73,7 @@ transition: 0.6s;
     margin: auto;
     width:90%; 
     background-color: white;
+    z-index:-2; 
 }
 .profile-conatiner h1{
   font-weight: 600;
@@ -93,98 +95,124 @@ transition: 0.6s;
     align-items: center;
 }
 
+
+.progress-container {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+    margin:2%; 
+}
 .aboutme-container{
     display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF; 
 }
+.aboutdes{
+    flex-basis: 40%;
+    padding-left: 6%;
+    padding-top: 5%;
+}
+.aboutdes p{
+    font-size: 16px;
+    line-height: 22px;
+    padding: 1px;
+    color:gray;
+    text-align: left;
+}
+.itemslist{
+    display: flex;
+}
+.about-items
+{
+    margin: 20px;
+    border: 1px solid whitesmoke;
+    width: 20%;
+    padding: 20px;
+    justify-content: space-around;
+
+
+}
+.flextitem{
+    width:100%;
+    flex-basis: 40%;
+    padding: auto;
+    padding-top: 4%;
+
+}
+.flextitem div {
+  align-items: center;
+}
+.skill {
+    
+    background-image: linear-gradient(to right, #7D9EFB, #86DAFB);
+    color: white;
+    padding: 0px;
+    text-align: right;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+.aftereffetcs{
+    width: 85%;
+}
+.Photoshop{
+    width: 90%;
+}
+.Illustator{
+    width: 70%;
+}
+.Sublime{
+    width: 95%;
+}
+.Sketch{
+    width: 75%;
+}
+
+
+/*
 .aboutme-container div{
 padding:5px;
-}
 .about{
     flex:1;
 }
 .about-items{
     flex:1; 
 }
-.aboutme h1{
+.about h1{
     font-size: 30px;
     font-weight: 600;
-    padding-left: 100px;
+    padding-left: 40px;
+    margin-top: 30px;
 }
-.aboutme p{
+.about p{
     font-size: 14px;
-    font-weight: 300;
+    font-size: medium;
     line-height: 22px;
     padding: 1px;
     color:gray;
     text-align: left;
-    Padding-left: 100px;
+    Padding-left: 40px;
+    justify-content: center;
    
 }
-.row{
-    margin-top: 5%;
-    display:flex; 
-    justify-content: space-between;
-
+.aboutstats{
+    display: flex;
+    width: 20%;
+    border: 2px solid gray;
+    margin-left:10%;
+    margin-top: 2%;
+    padding: 2%;
+    align-items: center;
 }
-.leftabout-col{
-    flex-basis: 19%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    background: white;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    justify-content: space-around;
-    transition: 0.5s;
-    margin-right: 100px;
-    margin-left: 100px;
-    
+.about-items{
+   margin: 10px;
+   padding: 3px; 
+   justify-content: space-between;
+   gap: 3px;
 }
 
-.leftabout-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
-.skills{
-    width:600px; 
-    background: white;
-    border-radius: 10px;
-    padding: 25px 30px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    text-align: left; 
-  
+*/
 
-
-}
-.skills .bar{
-    margin:20px 0px; 
-}
-.skills .bar:first-child{
-    margin-top: 0px;
-
-}
-.skills .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-}
-.skills .bar .progresslines{
-    height:10px; 
-    width:100%; 
-    background-color: blue;
-    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
-    0px 1px rgba(0,0,0,0.05);
-}
-.bar .progresslines span{
-    height:10px; 
-    width:100%; 
-    position: absolute;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, DodgerBlue	, LightBlue);
-}
-
-
-
-
-
-   /*Client CSS*/
   .clients{
     text-align: center;
     width:80%; 
@@ -240,7 +268,7 @@ padding:5px;
 }
 
 
-/*Fearured Products*/
+
 .Featured_products
 {
     width:80%;
@@ -261,6 +289,12 @@ padding:5px;
     color:gray;
     text-align: center;
    
+}
+.product-nav{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    gap: 30px;
 }
 .pro-col img{
     width:100%; 
@@ -333,7 +367,9 @@ padding:5px;
     background-image: linear-gradient(to right, DodgerBlue	, LightBlue);
     transition: 1s;
 }
-
+.nav-pro{
+    display: flex;
+}
 /*testimonials css*/
 .testmon{
     width:100%;
