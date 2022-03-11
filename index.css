@@ -64,20 +64,26 @@ transition: 0.6s;
 .profile-conatiner
 {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     border: 2px solid white;
     border-radius: 8px;
-    justify-content: center;
-    margin: auto;
     width:90%;
+    height: 110vh;
+    position:absolute;
     background-color: white;
-    z-index:-2;
+    margin: 10vh 0px 0px 10vh;
+    z-index: 1;
+    box-shadow: 0px 0px 60px 0px rgb(43, 42, 42);
 }
 .profile-conatiner h1{
   font-weight: 600;
 }
-.profileimg-item
+.profileimg-item img
 {
+    flex-basis: 50%;
+    width: 550px;
+    height: 550px;
     background-color: white;
     border: 3px solid white;
     border-radius: 8px;
@@ -90,9 +96,43 @@ transition: 0.6s;
 }
 .profileitem
 {
+    flex-basis: 30%;
     align-items: center;
 }
 
+.profileitem h5{
+    margin-top: 15vh;
+}
+
+.profileitem h1{
+    margin-top: 3vh;
+    font-size: 30px;
+}
+
+.profileitem h6{
+    margin: 15px 0px 20px 0px;
+    font-size: 15px;
+}
+
+.profileitem p{
+    line-height: 1.5;
+}
+
+.profileitem i{
+    margin-top: 20px;
+}
+
+.profileitem .fa p{
+    margin: -3vh 0px 0px 6vh;
+}
+
+.fa-facebook{
+    margin-right: 10px;
+}
+
+.fa-globe{
+    margin-left: 10px;
+}
 
 .progress-container {
     background-color: rgb(192, 192, 192);
@@ -105,13 +145,15 @@ transition: 0.6s;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #FFFFFF;
+    position: relative;
+    height: 100vh;
 }
-.aboutdes{
+.about-des{
     flex-basis: 40%;
     padding-left: 6%;
-    padding-top: 5%;
+    padding-top: 20%;
 }
-.aboutdes p{
+.about-des p{
     font-size: 16px;
     line-height: 22px;
     padding: 1px;
@@ -132,14 +174,14 @@ transition: 0.6s;
 
 
 }
-.flextitem{
+.flex-item{
     width:100%;
     flex-basis: 40%;
     padding: auto;
-    padding-top: 4%;
+    padding-top: 20%;
 
 }
-.flextitem div {
+.flex-item div {
   align-items: center;
 }
 .skill {
@@ -172,7 +214,6 @@ transition: 0.6s;
 
   .clients{
     text-align: center;
-    width:80%;
     margin:auto;
     padding-top: 100px;
     width: 100%;
@@ -196,21 +237,17 @@ transition: 0.6s;
     margin-top: 5%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     text-align: start;
 
 }
 .client-col{
-    flex-basis: 20%;
+    flex-basis: 25%;
     border-radius: 10px;
     margin-bottom: 5%;
     background: white;
     padding: 25px 25px;
     box-sizing: border-box;
-    justify-content: space-around;
-    transition: 0.5s;
-    margin-right: 100px;
-    margin-left: 100px;
 }
 .client-col h3{
     margin-top: 8%;
@@ -223,7 +260,7 @@ transition: 0.6s;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
-.pro-row,.pro2-row{
+.pro-row{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -265,41 +302,18 @@ transition: 0.6s;
     margin-bottom: 2%;
     font-weight: bold;
 }
-.pro-col img,.pro2-col img{
+.pro-col img{
     width:100%;
 }
-.pro-col,.pro2-col{
+.pro-col{
     transition: 0.5s;
-    flex-basis: 30%;
-    margin: 20px;
+    flex-basis: 25%;
+    margin: 20px 20px 20px 60px;
 }
-.pro-col:hover,.pro2-col:hover{
+.pro-col:hover{
     box-shadow: 0 0 20px 0px yellow;
 }
 
-
-
-.product2
-{
-    width:80%;
-    margin:auto;
-    text-align: center;
-    padding-top: 50px;
-
-}
-
-.product2 h1{
-    font-size: 30px;
-    font-weight: 600;
-}
-.product2 p{
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    color:gray;
-    text-align: center;
-}
 .button {
     color: white;
     border: none;
@@ -312,12 +326,13 @@ transition: 0.6s;
     font-weight: 800;
     cursor: pointer;
     border-radius: 6px;
-    margin-left: 45%;
+    margin-left: 44%;
     margin-bottom: 5%;
-  }
+}
+
 .button:hover{
     border: 1px solid blueviolet;
-    background-image: linear-gradient(to right, DodgerBlue	, LightBlue);
+    color: blue;
     transition: 1s;
 }
 .nav-pro{
@@ -358,25 +373,27 @@ transition: 0.6s;
 .footer{
     display: flex;
     background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70vh;
 }
 .footeritems{
- display: flex;
-    flex-direction: column;
+    flex-basis: 25%;
     color: white;
     width: 100%;
-    justify-content: space-evenly;
-    padding: 9% 9%;
-    gap: 30px;
+    margin-top: 20vh;
+    margin-left: 15vh;
 }
 .footeritems h4{
     font-size: 20px;
+    margin-bottom: 20px;
 }
 .footeritems p{
    color: gray;
+   margin-bottom: 40px;
 }
 .followmeitem{
     display: flex;
-    gap:5%;
 }
 
 .fotteremail1{
@@ -387,6 +404,25 @@ transition: 0.6s;
     background-color: black;
 }
 
+.footernewsletter-item input{
+    width:20em;
+    height:25px;
+    background-color: black;
+    color: white;
+    border: 1px solid lightblue;
+}
+
+.footernewsletter-item button{
+    width:30px;
+    height: 30px;
+    margin-left: -4px;
+    margin-top: 0px;
+    background-image: linear-gradient(to right, DodgerBlue	, LightBlue);
+}
+
+.fa-behance{
+    margin-left: 20px;
+}
 
 
 @media(max-width:768px){
@@ -394,11 +430,43 @@ transition: 0.6s;
 .aboutdes,.flextitem,.client-col,.pro-col,.pro2-col {
     flex-basis: 100%;
 }
+
+.profileimg-item{
+    flex-basis: 100%;
+}
+
+.profileimg-item img{
+    width:400px;
+    height:400px;
+}
+
+.profileitem{
+    flex-basis: 100%;
+    padding-left: 50px;
+    margin-top: -10em;
+}
+
+.profile-conatiner{
+    height: 200vh;
+    width: 100%;
+    margin-left: 0px;
+}
 .flextitem{
     margin: 5%;
 }
+
+.aboutme-container{
+    margin-top: 120vh;
+}
 }
 
+@media(max-width:1440px)
+{
+    .client-row
+    {
+       
+    }
+}
 
 @media(max-width: 425px){
     nav .fa{
