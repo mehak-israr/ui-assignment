@@ -168,7 +168,7 @@ transition: 0.6s;
     width: 75%;
 }
 
-
+/*Client Reviews*/
 
   .clients{
     text-align: center;
@@ -325,93 +325,78 @@ transition: 0.6s;
 .nav-pro{
     display: flex;
 }
-
-.testmon{
-    width:100%;
-    margin: auto;
-    padding-top: 100px;
+/*testmonial*/
+.testmonial{
+    background-color: #F9F9FF; 
+}
+.testdes{
     text-align: center;
-    background-color:#FAF9F6;
-    margin-top: 100px;
-}
-.testmon p{
-    margin-top: 10px;
-    color: grey;
-}
+    margin: 10% 0%; 
+    padding-top: 4%;
 
-.test-col{
-    flex-basis: 44%;
+}
+.testdes p{
+    padding-top: 2%;
+    color: gray;
+}
+.reviewsdiv{
+    display: flex;
+    padding: 1% 0px;
+    background-color: white;
+}
+.reviews
+{
+    border: 1px solid whitesmoke;
     border-radius: 10px;
-    margin-bottom: 5%;
-    align-items: center;
-    background: white;
-    padding: 20px 20px;
-    cursor: pointer;
-    box-sizing: border-box;
-    justify-content: space-around;
-    margin-right: 60px;
-    margin-left: 100px;
-  
-    
-    
+    background-color: white;
+    width: 100%;
+    margin:5% 5%;  
+    padding: 2%;
+   
 }
-.test-col p{
-    text-align: left ; 
-    color: grey;
-    font-style: italic;
-}
-.test-col h3{
-    text-align: left ; 
-    
-}
-.test-col .fa{
-    color: orange;
-    
-}
-.test-col ul{
+.reviews p{
     text-align: left;
 }
-
+/*Footer*/
 .footer{
-    width:100%;
-    margin: auto;
-    padding-top: 8px;
-    padding-left: 30px;
-    text-align: center;
-    background-color:black;
+    display: flex;
+    background-color: black;
 }
-.fot-col{
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    align-items: center;
-    padding: 2px 20px;
-    cursor: pointer;
-    box-sizing: border-box;
-    justify-content: space-around;
-    margin-right: 60px;
-    margin-left: 100px;
-  }
-  .fot-col .fa{
-      color:white;
-      display: inline;
-      justify-content: left;
-      padding-left: 10px;
-      margin-right: 30px;
-      
-  }
-  .fot-col h4{
-      color: white;
-      text-align: left;
-  }
-  .fot-col p{
-    color: grey;
-    text-align: left;
+.footeritems{
+ display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%; 
+    justify-content: space-evenly;
+    padding: 9% 9%; 
+    gap: 30px;
+}
+.footeritems h4{
+    font-size: 20px;
+}
+.footeritems p{
+   color: gray;
+}
+.followmeitem{
+    display: flex;
+    gap:5%;
+}
+.footeraboutme-item p{
+    color: gray;
+    padding:2%; 
+}
+.fotteremail1{
+    display: flex;
+    flex-direction: row;
+    border:1px solid blue; 
+    justify-content: space-evenly;
+    background-color: black;
 }
 
 
+/*
 
-@media(max-width: 700px)
+@media(max-width: 320px)
   {
       .about h1{
           font-size: 15px;
@@ -442,11 +427,21 @@ transition: 0.6s;
           padding:30px; 
       }
  }
-
- /*For Mobiles*/
+ */
  @media(max-width: 320px)
  {
-     .profile-conatiner div img{
-         width:20%; 
+     .reviewsdiv{
+        flex-direction: column;
+        padding: 4%;
+        margin-right: 2px;
      }
+     
+     .footer{
+         flex-direction: column;
+     }
+     .footeritems
+     {
+        padding:2% 5%
  }
+
+}
